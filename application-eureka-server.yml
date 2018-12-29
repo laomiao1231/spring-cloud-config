@@ -11,6 +11,8 @@ spring:
     name: microservicecloud-config-client
 eureka: 
   client: 
+    register-with-eureka: false
+    fetch-registry: false
     service-url: 
       defaultZone: http://eurekaserver:8033/eureka/  
 ---
@@ -22,5 +24,7 @@ spring:
     name: microservicecloud-config-client
 eureka: 
   client: 
+    register-with-eureka: false
+    fetch-registry: false
     service-url: 
       defaultZone: http://eurekaserver:8033/eureka/
