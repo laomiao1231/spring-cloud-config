@@ -12,11 +12,11 @@ spring:
 eureka: 
   instance:
     hostname: eurekaserver
-  client: 
+  client:
     register-with-eureka: false
     fetch-registry: false
-    service-url: 
-      defaultZone: http://eurekaserver:8033/eureka/  
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ 
 ---
 server: 
   port: 8033 
@@ -26,9 +26,9 @@ spring:
     name: microservicecloud-config-client
 eureka:
   instance:
-    hostname: eurekaserver 
-  client: 
+    hostname: eurekaserver
+  client:
     register-with-eureka: false
     fetch-registry: false
-    service-url: 
-      defaultZone: http://eurekaserver:8033/eureka/
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
