@@ -10,6 +10,8 @@ spring:
   application: 
     name: microservicecloud-config-client
 eureka: 
+  instance:
+    hostname: eurekaserver
   client: 
     register-with-eureka: false
     fetch-registry: false
@@ -22,7 +24,9 @@ spring:
   profiles: test
   application: 
     name: microservicecloud-config-client
-eureka: 
+eureka:
+  instance:
+    hostname: eurekaserver 
   client: 
     register-with-eureka: false
     fetch-registry: false
