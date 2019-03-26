@@ -19,7 +19,7 @@ eureka:
       defaultZone: http://eurekaserver:8033/eureka/ 
 ---
 server: 
-  port: 8033 
+  port: 8034 
 spring:
   profiles: test
   application: 
@@ -31,4 +31,4 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     serviceUrl:
-      defaultZone: http://eurekaserver:8033/eureka/
+      defaultZone: http://eurekaserver:8034/eureka/
