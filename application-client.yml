@@ -8,7 +8,7 @@ server:
 spring:
   profiles: dev
   application: 
-    name: dev-config-client
+    name: dev-config-client1
 eureka: 
   client: 
     service-url:
@@ -19,7 +19,7 @@ server:
 spring:
   profiles: test
   application: 
-    name: test-config-client
+    name: test-config-client1
 eureka: 
   client: 
     service-url:
